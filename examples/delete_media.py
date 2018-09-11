@@ -31,11 +31,10 @@ Media = MediaList['items'][0]
 # get media ID 
 
 MediaID = Media['id']
-MediaType = Media['media_type']
 
 # call deleteMedia Method
 # deleteMedia return BOOL {true|false} 
-isDeleted = ig.deleteMedia(MediaID, media_type=MediaType)
+isDeleted = ig.deleteMedia(MediaID)
 
 if isDeleted:
     print("Your Media {0} has been deleted".format(
